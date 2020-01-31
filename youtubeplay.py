@@ -1,8 +1,9 @@
 import discord
+import os
 
-discord_token = '***' # Discordbotのアクセストークンを入力
+TOKEN = os.environ['DISCORD_BOT_TOKEN']
 discord_voice_channel_id = '' # 特定のボイスチャンネルを指定
-youtube_url = 'https://www.youtube.com/watch?v=FIw-HUP7XK0' # youtubeのURLを指定
+youtube_url = 'https://youtu.be/mN7u3h-BZjY' # youtubeのURLを指定
 
 voice = None
 player = None
@@ -60,4 +61,4 @@ async def on_message(message):
             voice = None
             return
 
-client.run(discord_token)
+client.run(TOKEN)
