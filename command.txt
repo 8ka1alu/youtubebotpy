@@ -1,0 +1,6 @@
+!play
+再生
+!stop
+停止
+!disconnect
+botをボイスチャットから切断させる
